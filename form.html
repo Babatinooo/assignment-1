@@ -2,30 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Application Form</title>
+  <title>AltSchool Sign In</title>
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a> |
       <a href="form.html">Application Form</a>
     </nav>
   </header>
   <main>
-    <h1>Application Form</h1>
+    <nav aria-label="Account options">
+      <a href="#">Sign up</a> |
+      <a href="form.html">Sign in</a>
+    </nav>
+
+    <h1>Sign in</h1>
+    <p>Enter your email address and password to securely log in to AltSchool Student Portal</p>
+
     <form action="#" method="post">
-      <fieldset>
-        <legend>Sign in</legend>
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Sign in</button>
-      </fieldset>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="john.doe@example.com" required><br><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" placeholder="********" required><br><br>
+
+      <button type="submit">Proceed to Dashboard</button>
     </form>
+
+    <p>Forgot your password? <a href="#">Reset Now!</a></p>
+    <p>OR</p>
+    <button type="button">Login with Google</button>
   </main>
   <footer>
-    <address>Your address, Lagos, Nigeria</address>
+    <address>23, Okesuna Street, Somolu, Lagos, Nigeria</address>
     <p>&copy; 2026 Babatunde Shopeju</p>
   </footer>
 </body>
